@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button{width: auto;height: 30px;background: lightblue;color: #000;outline: none;border: 2px solid #000;}
+		p{width: 200px;height: 30px;line-height: 30px;color: green;border: 1px solid #000;text-align: center;}
+		#name, #about{height: 30px;line-height: 30px;border: 1px solid #000;color: green;width: 200px;margin-top: 20px;text-align: center;}
+		#about{width: 500px;}
+		#myinfo{color: #000;height: 30px;width: 200px;line-height: 30px;border: 1px solid #000;text-align: center;margin-bottom: 20px;}
+	</style>
+</head>
+<body>
+<button onclick="car()">Click here to see your car name!</button>
+<p id="mycar"></p>
+
+<button onclick="number()">Display the number</button>
+<p id="num"></p>
+
+
+<button onclick="xy()">Click the button to see the sum of x and y</button>
+<p id="x"></p>
+
+<button onclick="z()">Click here to see the value of z.</button>
+<p id="last"></p>
+
+<button onclick="info()">Try it</button>
+<p id="name"></p>
+
+<div id="myinfo" onmouseover="hello()"></div>
+
+<button onclick="al()">Click here!</button>
+
+
+
+<script type="text/javascript">
+	function car() {
+		var carName = "Honda City";
+		document.getElementById('mycar').innerHTML = carName;
+	}
+	function number() {
+		var number = 150;
+		document.getElementById('num').innerHTML = number;
+	}
+	function xy(){
+		var x = 5;
+		var y = 10;
+		document.getElementById('x').innerHTML = x+y;
+	}
+	function z(){
+		var x = 5; y = 10;
+		var z = x+y;
+		document.getElementById('last').innerHTML = z;
+	}
+	function info(){
+		var firstName = "John"; lastName = "Doe"; age = 35;
+		document.getElementById('name').innerHTML = firstName+ " " + lastName + " " + age;
+		
+	}
+	function hello(){
+		document.getElementById('myinfo').innerHTML = "Hello There!";
+	}
+	function al(){
+		var firstName = "John"; lastName = "Doe"; age = 35;
+		alert("My name is" + " " + firstName + " " + lastName + " " + "and I am" + " " + age + " " + "years old");
+	}
+	function calculateAge(){
+		const DOB = 45;
+	}
+	
+
+		
+
+</script>
+</body>
+</html>
